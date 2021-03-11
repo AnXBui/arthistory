@@ -46,12 +46,12 @@ module.exports = {
         pixelId: facebook_pixel,
       }
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        icon: './src/assets/images/gatsby-icon.png'
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   // options: {
+    //   //   icon: './src/assets/images/gatsby-icon.png'
+    //   // },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
