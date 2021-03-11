@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artworks",
+  "info": {
+    "name": "artwork",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "Artwork title",
+      "required": true
+    },
+    "Designer": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "additional_info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.additional-info"
+    }
+  }
+}
