@@ -48,7 +48,12 @@ const Artworks = () => {
       console.log(image.childImageSharp.fluid);
       return <div className="artworkItem" key={index}>
         <div className="artworkImage">
-          <Image fluid={image.childImageSharp.fluid} className='imageContent'/>
+          <Image fluid={image.childImageSharp.fluid} 
+                  imgStyle={{
+                    objectFit: "contain",
+                    objectPosition: "50% 50%",
+                  }}
+                  className='imageContent'/>
         </div>
         {/* <Image /> */}
         <div className="artworkInfo">
