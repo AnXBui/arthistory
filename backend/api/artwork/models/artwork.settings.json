@@ -26,8 +26,8 @@
     "Description": {
       "type": "text"
     },
-    "Image": {
-      "collection": "file",
+    "image": {
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
@@ -39,6 +39,15 @@
       "type": "component",
       "repeatable": true,
       "component": "info.additional-info"
+    },
+    "Country": {
+      "type": "enumeration",
+      "enum": [
+        "US",
+        "USSR"
+      ],
+      "default": "US",
+      "required": true
     }
   }
 }
